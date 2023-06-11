@@ -10,3 +10,4 @@ close.addEventListener('click',function () {
 })
 const swup = new Swup();
 AOS.init();
+

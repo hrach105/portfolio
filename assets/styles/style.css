@@ -566,3 +566,6 @@ footer .logo {
     }
 }
 /*media query*/
+.link.active {
+    color: white;
+}
