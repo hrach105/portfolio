@@ -117,13 +117,13 @@
                         <h2>Let’s work <span>together.</span></h2>
                         <form action="">
                             <label for="">
-                                <input type="text" placeholder="Name">
+                                <input class="input-field" type="text" placeholder="Name">
                             </label>
                             <label for="">
-                                <input type="text" placeholder="Email">
+                                <input class="input-field" type="text" placeholder="Email">
                             </label>
                             <label for="">
-                                <input type="text" placeholder="your Subject">
+                                <input class="input-field" type="text" placeholder="your Subject">
                             </label>
                             <label for="">
                                 <textarea name="" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
@@ -165,4 +165,15 @@
 <script src="https://unpkg.com/swup@3"></script>
 <script src="assets/scripts/script.js"></script>
 </body>
+<script>
+    const inputs = document.querySelectorAll('input');
+    const form = document.querySelector('form');
+
+    inputs.forEach(function(input) {
+        let value = input.value
+        input.addEventListener('input',function (e){
+            
+        })
+    });
+</script>
 </html>
