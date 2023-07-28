@@ -17,6 +17,12 @@ a {
 html.is-animating .transition-fade {
   opacity: 0;
 }
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100vh;
+}
 .bg {
   background-color: #151515;
   border-radius: 30px;
@@ -28,6 +34,7 @@ html.is-animating .transition-fade {
 
 body {
   background-color: #0f0f0f;
+  margin: 0;
 }
 .mobile-header {
   display: none;
@@ -35,7 +42,7 @@ body {
 header {
   margin-bottom: 60px;
 }
-header .logo {
+header .logo a{
   color: white;
 }
 header nav ul {
@@ -386,6 +393,7 @@ textarea {
   padding-left: 12px;
   outline: none;
   color: #747474;
+  resize: none;
 }
 .contact .form form label input,
 textarea::placeholder {
@@ -408,6 +416,7 @@ footer {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-shrink: 0;
 }
 footer ul {
   display: flex;
@@ -574,9 +583,9 @@ footer .logo {
 }
 
 .overlay {
-  position: absolute;
+  position: fixed;
   width: 100%;
-  height: 100%;
+  height: 100vh;
   background-color: #242424;
   left: 0;
   top: 0;
@@ -591,4 +600,10 @@ footer .logo {
 
 html.is-animating .transition-wipe {
   transform: scaleX(1);
+}
+
+
+span.active {
+  color: white !important;
+  transition: .5s;
 }
