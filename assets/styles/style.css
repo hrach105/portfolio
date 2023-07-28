@@ -114,6 +114,7 @@ header .go-contact-btn {
 .about-desc h4 {
   color: white;
   font-size: 30px;
+  word-wrap: break-word;
 }
 .about-desc span {
   margin-bottom: 0;
