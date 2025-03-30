@@ -7,7 +7,9 @@ ul {
 a {
   text-decoration: none;
 }
-
+.container {
+  transform: scale(.9) !important;
+}
 /*reset styles*/
 .transition-fade {
   transition: 0.5s;
